@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hand-Controlled 3D Particle System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <div id="canvas-container"></div>
+
+    <div id="video-container">
+        <video id="input-video" autoplay playsinline></video>
+    </div>
+
+    <div id="ui">
+        <h3>Particle Shapes</h3>
+        <button onclick="setShape('galaxy')">Galaxy Spiral</button>
+        <button onclick="setShape('heart')">Heart</button>
+        <button onclick="setShape('flower')">Flower</button>
+        <button onclick="setShape('saturn')">Saturn Ring</button>
+        <button onclick="setShape('sphere')">Explosion</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

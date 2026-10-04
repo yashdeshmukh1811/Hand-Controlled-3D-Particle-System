@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #050505;
+    font-family: sans-serif;
+}
+
+#canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#video-container {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 320px;
+    height: 240px;
+    z-index: 2;
+    border: 2px solid #333;
+    transform: scaleX(-1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#ui {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+}
+
+button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #666;
+}
+
+.info {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 10px;
+}
